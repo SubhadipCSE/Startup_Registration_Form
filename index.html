@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-r from-purple-100 to-blue-100 min-h-screen font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center p-4">
+        <div class="text-xl font-bold text-blue-600">StartupZone</div>
+        <nav class="flex flex-wrap gap-4 text-gray-700 text-sm">
+          <a href="#" class="hover:text-blue-600 font-medium">Home</a>
+          <a href="#" class="hover:text-blue-600 font-medium">Applications</a>
+          <a href="#" class="hover:text-blue-600 font-medium">Services</a>
+          <a href="#" class="hover:text-blue-600 font-medium">About</a>
+          <a href="#" class="hover:text-blue-600 font-medium">More</a>
+          <a href="#" class="hover:text-blue-600 font-medium">Career</a>
+        </nav>
+        <div class="flex gap-2">
+          <button class="px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600">Log in</button>
+          <button class="px-4 py-1 bg-green-500 text-white rounded hover:bg-green-600">Register</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Heading -->
+    <div class="text-center mt-10">
+      <h1 class="text-4xl font-bold text-blue-700">Startup Registration Form</h1>
+    </div>
+
+    <!-- Form Section -->
+    <main class="max-w-4xl mx-auto bg-white p-8 mt-10 mb-16 rounded-lg shadow-lg">
+      <form class="space-y-8">
+        <!-- Business Details -->
+        <section>
+          <h2 class="text-2xl font-semibold text-purple-700 mb-4">Business Details</h2>
+
+          <label class="block mb-2 text-sm font-medium">Startup Name</label>
+          <input type="text" placeholder="Enter your business name"
+            class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+
+          <label class="block mt-4 mb-2 text-sm font-medium">Owner's Name</label>
+          <input type="text" placeholder="Enter owner's name"
+            class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+
+          <div class="mt-4">
+            <p class="text-sm font-medium mb-2">Business Type</p>
+            <div class="flex gap-4">
+              <label><input type="radio" name="type" value="B2B" class="mr-1"> B2B</label>
+              <label><input type="radio" name="type" value="B2C" class="mr-1"> B2C</label>
+              <label><input type="radio" name="type" value="All" class="mr-1"> All</label>
+            </div>
+          </div>
+
+          <label class="block mt-4 mb-2 text-sm font-medium">Category</label>
+          <select class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <option>1. Technology</option>
+            <option>2. Health & Wellness</option>
+            <option>3. Education</option>
+            <option>4. E-commerce</option>
+            <option>5. FinTech</option>
+            <option>6. Sustainability</option>
+            <option>7. Entertainment</option>
+            <option>8. Food & Beverage</option>
+            <option>9. Artificial Intelligence</option>
+            <option>10. Blockchain</option>
+          </select>
+
+          <label class="block mt-4 mb-2 text-sm font-medium">Upload Logo</label>
+          <input type="file" class="w-full px-4 py-2 border rounded" />
+        </section>
+
+        <!-- Communication Details -->
+        <section>
+          <h2 class="text-2xl font-semibold text-purple-700 mb-4">Communication Details</h2>
+
+          <label class="block mb-2 text-sm font-medium">Mobile Number</label>
+          <input type="tel" pattern="[0-9]{10}" placeholder="Ex: 7407125405"
+            class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+
+          <label class="block mt-4 mb-2 text-sm font-medium">Email ID</label>
+          <input type="email" placeholder="Ex: example@gmail.com"
+            class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+        </section>
+
+        <!-- Terms & Conditions -->
+        <section>
+          <label class="flex items-start gap-2 text-sm">
+            <input type="checkbox" required class="mt-1">
+            <span>I accept all the terms and conditions of the company. I will maintain all rules and regulations of the agreement.</span>
+          </label>
+        </section>
+
+        <!-- Buttons -->
+        <div class="flex gap-4 justify-center">
+          <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Submit</button>
+          <button type="reset" class="px-6 py-2 bg-gray-300 text-black rounded hover:bg-gray-400">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
